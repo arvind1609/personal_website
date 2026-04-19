@@ -109,7 +109,8 @@ h3 {
 
 /* ── Hero ── */
 #about { padding-top: 64px; padding-bottom: 56px; }
-.hero { display: flex; gap: 48px; align-items: flex-start; flex-direction: row-reverse; }
+.hero { display: flex; gap: 24px; align-items: center; flex-direction: column; text-align: center; }
+.hero .hero-links { justify-content: center; }
 .hero-photo {
   flex-shrink: 0;
   width: 148px; height: 148px;
@@ -316,7 +317,7 @@ a.accent-link:hover { text-decoration: underline; }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .hero { flex-direction: column; gap: 24px; align-items: center; text-align: center; justify-content: center; }
+  .hero { gap: 20px; }
   .hero-links { justify-content: center; }
   .pub { flex-direction: column; gap: 6px; }
   .pub-year { width: auto; text-align: left; }
