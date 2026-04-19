@@ -109,10 +109,10 @@ h3 {
 
 /* ── Hero ── */
 #about { padding-top: 64px; padding-bottom: 56px; }
-.hero { display: flex; gap: 24px; align-items: center; flex-direction: column; text-align: center; }
-.hero .hero-links { justify-content: center; }
+.hero { display: block; overflow: hidden; }
 .hero-photo {
-  flex-shrink: 0;
+  float: right;
+  margin: 4px 0 16px 32px;
   width: 148px; height: 148px;
   border-radius: 10px;
   background: var(--accent-light);
@@ -317,7 +317,7 @@ a.accent-link:hover { text-decoration: underline; }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .hero { gap: 20px; }
+  .hero-photo { float: none; margin: 0 auto 20px; display: block; }
   .hero-links { justify-content: center; }
   .pub { flex-direction: column; gap: 6px; }
   .pub-year { width: auto; text-align: left; }
